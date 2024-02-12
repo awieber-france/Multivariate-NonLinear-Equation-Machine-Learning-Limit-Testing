@@ -32,7 +32,7 @@ With regards to transforming the base features (x1, x2, x3, etc.) into polynomia
    
 ### *Files:*
 1.	Polynomial_Machine_Learning_Limit_Testing.ipynb : Jupyter notebook document containing all the project code
-2.	requirements.txt : packages to be installed via pip in Conda
+2.	requirements.txt : packages to be installed via "conda install" in Conda
 
 ## Making the code functional:
 The code should be immediately functional after installation of the requirements. If this code is run in an IDE, then Jupyter Notebook may need to be installed.
