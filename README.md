@@ -13,9 +13,12 @@ Secondly, this project examines whether polynomial features (of degree 2) can be
 
 # ► The interest of the project
 
-The ability to understand the limits of both polynomial regression and Random Forest Regression is essential to selecting the proper model in any machine learning project. It is demonstrated that Random Forest Regression can achieve good results with polynomial features but that these features must be selected carefully. Using an RFE leads to overfitting as can be seen by its selection of features not in alignment with the real equations used to generate the data.
+The ability to understand the limits of both polynomial regression and Random Forest Regression is essential to selecting the proper model in any machine learning project. Nonlinear behavior is particularly difficult to take into account. The following conclusions can be taken from this project:
+- Polynomial regression must approximate |x5| by x**2 to achieve good results (at least in the case where there are equal negative and positive values of x). As a result, Random Forest Regression is better at predicting results from the x5 feature.
+- Polynomial regression is better than Random Forest Regression at predicting the interaction x6*x7, however.
+- Random Forest Regression is poorer at predicting the x8^3.5 feature.
 
-It is also demonstrated that polynomial regression must approximate |x| by x**2 to achieve good results (at least in the case where there are equal negative and positive values of x) 
+With regards to transforming the base features (x1, x2, x3, etc.) into polynomial features, it is demonstrated that Random Forest Regression results can be improved. These features must be selected carefully, however. Using an RFE leads to overfitting as can be seen by its selection of features not in alignment with the real equations used to generate the data. Overfitting is of course a concern with polynomial regression as well.
 
 # ► How to Install and Run the Project
 
