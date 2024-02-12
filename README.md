@@ -22,12 +22,12 @@ It is also demonstrated that polynomial regression must approximate |x| by x**2 
 ## Installation
 
 ### *Prerequisites:*
-1.	Python 3.11.5 environment
-2.	Jupyter Notebook (last tested on version 7.0.6)
+1.	Python 3.10.13 environment
+2.	Jupyter Notebook (last tested on version 7.0.5)
 3.	Anaconda
    
 ### *Files:*
-1.	Polynomial_Machine_Learning_Limit_Testing.ipynb : Jupyter notebook document containing main project code
+1.	Polynomial_Machine_Learning_Limit_Testing.ipynb : Jupyter notebook document containing all the project code
 2.	requirements.txt : packages to be installed via pip in Conda
 
 ## Making the code functional:
