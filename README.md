@@ -8,6 +8,7 @@ Firstly, this project examines the capability of Polynomial Regression, Random F
 - y3 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + 2∙(x6)∙(x7) + 5
 - y4 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + |x5| + 2∙(x6)∙(x7) + 5
 - y5 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + |x5| + 2∙(x6)∙(x7) + 1.2*x8^(3.5) + 5
+Note: a final noise variable is added in some simulations. This is an "x9" external to the equations.
 
 Secondly, this project examines whether polynomial features (of degree 2) can be used successfully with a Random Forest Regression with equation y5. This is performed via an RFE, manually selected polynomial features, and finally the precise features used in the equations.
 
