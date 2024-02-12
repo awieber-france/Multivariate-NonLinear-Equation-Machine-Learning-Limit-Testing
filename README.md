@@ -23,7 +23,7 @@ It is also demonstrated that polynomial regression must approximate |x| by x**2 
 
 ### *Prerequisites:*
 1.	Python 3.10.13 environment
-2.	Jupyter Notebook (last tested on version 7.0.5)
+2.	Jupyter Notebook (last tested on version 7.0.6)
 3.	Anaconda
    
 ### *Files:*
