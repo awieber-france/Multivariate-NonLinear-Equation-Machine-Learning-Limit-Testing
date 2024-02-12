@@ -2,7 +2,7 @@
 
 # ► What the project does
 
-Firstly, this project examines the capability of Polynomial Regression, Random Forest Regression, and Ridge to predict a target variable that was generated via a precise equation. Variants of the formula are examined in order to evaluate the sensitivity of each model to the different parts of the equation. Modelization is perforemed on both a clean and a noisy version of the data. These equations are:
+Firstly, this project examines the capability of Polynomial Regression, Random Forest Regression, and Ridge to predict a target variable that is generated via a precise equation. Variants of the formula are examined in order to evaluate the sensitivity of each model to the different parts of the equation. Modelization is perforemed on both a clean and a noisy version of the data. These equations are:
 - y1 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + 5
 - y2 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + |x5| + 5
 - y3 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + 2∙(x6)∙(x7) + 5
@@ -14,7 +14,7 @@ Secondly, this project examines whether polynomial features (of degree 2) can be
 
 # ► The interest of the project
 
-The ability to understand the limits of both polynomial regression and Random Forest Regression is essential to selecting the proper model in any machine learning project. Nonlinear behavior is particularly difficult to take into account. The following conclusions can be taken from this project:
+The ability to understand the limits of both polynomial regression and Random Forest Regression is essential to selecting the proper model in any machine learning project involving continuous data. Nonlinear behavior is particularly difficult to take into account. The following conclusions can be taken from this project:
 - Polynomial regression must approximate |x5| by x**2 to achieve good results (at least in the case where there are equal negative and positive values of x). As a result, Random Forest Regression is better at predicting results from the x5 feature.
 - Polynomial regression is better than Random Forest Regression at predicting the interaction x6*x7, however.
 - Random Forest Regression is poorer at predicting the x8^3.5 feature.
@@ -33,6 +33,7 @@ With regards to transforming the base features (x1, x2, x3, etc.) into polynomia
 ### *Files:*
 1.	Polynomial_Machine_Learning_Limit_Testing.ipynb : Jupyter notebook document containing all the project code
 2.	requirements.txt : packages to be installed via "conda install" in Conda
+     -	use the following code in Anaconda Terminal: "for /f %i in (requirements.txt) do conda install --yes %i"
 
 ## Making the code functional:
 The code should be immediately functional after installation of the requirements. If this code is run in an IDE, then Jupyter Notebook may need to be installed.
