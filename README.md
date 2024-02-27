@@ -2,7 +2,7 @@
 
 # ► What the project does
 
-Firstly, this project examines the capability of Polynomial Regression, Random Forest Regression, and Ridge to predict a target variable that is generated via a precise equation. Variants of the formula are examined in order to evaluate the sensitivity of each model to the different parts of the equation. Modelization is perforemed on both a clean and a noisy version of the data. These equations are:
+Firstly, this project examines the capability of Polynomial Regression, Random Forest Regression, and Ridge to predict a target variable that is generated via a precise equation. Variants of the formula are examined in order to evaluate the sensitivity of each model to the different parts of the equation. Modelization is performed on both a clean and a noisy version of the data. These equations are:
 - y0 = 0.45∙(x1) - 0.35∙(x2) + 5
 - y1 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 + 5
 - y2 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + 5
