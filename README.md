@@ -22,6 +22,7 @@ The ability to understand the limits of both polynomial regression and Random Fo
 - Random Forest Regression is poorer at predicting the x8^3.5 feature.
 - Random Forest regression predicts 1/x4 better.
 - A single feature containing only random noise may not always have a big impact. In this project it has a < 1% negative result.
+- Ridge Regression does not do well with |x5| or 1/x4.
 
 With regards to transforming the base features (x1, x2, x3, etc.) into polynomial features, it is demonstrated that Random Forest Regression results can be improved. These features must be selected carefully, however. Using an RFE leads to overfitting as can be seen by its selection of features not in alignment with the real equations used to generate the data. Overfitting is of course a concern with polynomial regression as well.
 
