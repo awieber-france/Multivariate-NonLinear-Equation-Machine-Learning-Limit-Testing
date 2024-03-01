@@ -4,12 +4,12 @@
 
 Firstly, this project examines the capability of Polynomial Regression, Random Forest Regression, and Ridge to predict a target variable that is generated via a precise equation (multivariate and non-linear). Variants of the formula are examined in order to evaluate the sensitivity of each model to the different parts of the equation. Modelization is performed on both a clean and a noisy version of the data. These equations are:
 - $y_0 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 5$<br>
-- $y_1 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 + 5$<br>
-- $y_2 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + 5$<br>
-- $y_3 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + |x5| + 5$<br>
-- $y_4 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + 2 \cdot x_6 \cdot x_7 + 5$<br>
-- $y_5 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + |x5| + 2 \cdot  x_6 \cdot x_7 + 5$<br>
-- $y_6 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + |x5| + 2 \cdot  x_6 \cdot x_7 + 1.2 \cdot x_8^{3.5} + 5$
+- $y_1 = 0.7 \cdot x_3^2 + 5$<br>
+- $y_2 = - x_4^{-1} + 5$<br>
+- $y_3 = |x_5| + 5$<br>
+- $y_4 = 2 \cdot x_6 \cdot x_7 + 5$<br>
+- $y_5 = 1.2 \cdot x_8^{3.5} + 5$<br>
+- $y_6 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + |x_5| + 2 \cdot  x_6 \cdot x_7 + 1.2 \cdot x_8^{3.5} + 5$
 - Note: a final noise variable is added in some simulations. This is an " $x_9$ " external to the equations.
 
 Secondly, this project examines whether polynomial features (of degree 2) can be used successfully with a Random Forest Regression with equation $y_6$. This is performed via recursive feature elimination (RFE), manually selected polynomial features, and finally the precise features used in the equations (excluding the coefficients, eg. 0.45, -0.35, 0.7, etc.).
