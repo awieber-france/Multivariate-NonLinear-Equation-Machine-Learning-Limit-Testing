@@ -3,28 +3,28 @@
 # ► What the project does
 
 Firstly, this project examines the capability of Polynomial Regression, Random Forest Regression, and Ridge to predict a target variable that is generated via a precise equation. Variants of the formula are examined in order to evaluate the sensitivity of each model to the different parts of the equation. Modelization is performed on both a clean and a noisy version of the data. These equations are:
-- y0 = 0.45∙(x1) - 0.35∙(x2) + 5
-- y1 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 + 5
-- y2 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + 5
-- y3 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + |x5| + 5
-- y4 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + 2∙(x6)∙(x7) + 5
-- y5 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + |x5| + 2∙(x6)∙(x7) + 5
-- y6 = 0.45∙(x1) - 0.35∙(x2) + 0.7∙(x3)^2 - (x4)^-1 + |x5| + 2∙(x6)∙(x7) + 1.2*x8^(3.5) + 5
-- Note: a final noise variable is added in some simulations. This is an "x9" external to the equations.
+- $y_0 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 5$<br>
+- $y_1 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 + 5$<br>
+- $y_2 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + 5$<br>
+- $y_3 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + |x5| + 5$<br>
+- $y_4 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + 2 \cdot x_6 \cdot x_7 + 5$<br>
+- $y_5 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + |x5| + 2 \cdot  x_6 \cdot x_7 + 5$<br>
+- $y_6 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + |x5| + 2 \cdot  x_6 \cdot x_7 + 1.2 \cdot x_8^{3.5} + 5$
+- Note: a final noise variable is added in some simulations. This is an " $x_9$ " external to the equations.
 
-Secondly, this project examines whether polynomial features (of degree 2) can be used successfully with a Random Forest Regression with equation y6. This is performed via recursive feature elimination (RFE), manually selected polynomial features, and finally the precise features used in the equations (excluding the coefficients, eg. 0.45, -0.35, 0.7, etc.).
+Secondly, this project examines whether polynomial features (of degree 2) can be used successfully with a Random Forest Regression with equation $y_6$. This is performed via recursive feature elimination (RFE), manually selected polynomial features, and finally the precise features used in the equations (excluding the coefficients, eg. 0.45, -0.35, 0.7, etc.).
 
 # ► The interest of the project
 
 The ability to understand the limits of both polynomial regression and Random Forest Regression is essential to selecting the proper model in any machine learning project involving continuous data. Nonlinear behavior is particularly difficult to take into account. The following conclusions can be taken from this project:
-- Polynomial regression must approximate |x5| by x**2 to achieve good results (at least in the case where there are equal negative and positive values of x). As a result, Random Forest Regression is better at predicting results from the x5 feature.
-- Polynomial regression is better than Random Forest Regression at predicting the interaction x6*x7.
-- Random Forest Regression is poorer at predicting the x8^3.5 feature.
-- Random Forest regression predicts 1/x4 better.
+- Polynomial regression must approximate $|x_5|$ by $x^2$ to achieve good results (at least in the case where there are equal negative and positive values of $x$). As a result, Random Forest Regression is better at predicting results from the $x_5$ feature.
+- Polynomial regression is better than Random Forest Regression at predicting the interaction $x_6 \cdot x_7$.
+- Random Forest Regression is poorer at predicting the $x_8^{3.5}$ feature.
+- Random Forest regression predicts $x_4^{-1}$ better.
 - A single feature containing only random noise may not always have a big impact. In this project it has a < 1% negative result.
-- Ridge Regression does not do well with |x5| or 1/x4.
+- Ridge Regression does not do well with $|x_5|$ or $x_4^{-1}$.
 
-With regards to transforming the base features (x1, x2, x3, etc.) into polynomial features, it is demonstrated that Random Forest Regression results can be improved. These features must be selected carefully, however. Using an RFE leads to overfitting as can be seen by its selection of features not in alignment with the real equations used to generate the data. Overfitting is of course a concern with polynomial regression as well.
+With regards to transforming the base features ($x_1$, $x_2$, $x_3$, etc.) into polynomial features, it is demonstrated that Random Forest Regression results can be improved. These features must be selected carefully, however. Using an RFE leads to overfitting as can be seen by its selection of features not in alignment with the real equations used to generate the data. Overfitting is of course a concern with polynomial regression as well.
 
 # ► How to Install and Run the Project
 
