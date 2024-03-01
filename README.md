@@ -1,8 +1,8 @@
-# POLYNOMIAL MACHINE LEARNING LIMIT TESTING
+# MULTIVARIATE NON-LINEAR EQUATION MACHINE LEARNING LIMIT TESTING
 
 # ► What the project does
 
-Firstly, this project examines the capability of Polynomial Regression, Random Forest Regression, and Ridge to predict a target variable that is generated via a precise equation. Variants of the formula are examined in order to evaluate the sensitivity of each model to the different parts of the equation. Modelization is performed on both a clean and a noisy version of the data. These equations are:
+Firstly, this project examines the capability of Polynomial Regression, Random Forest Regression, and Ridge to predict a target variable that is generated via a precise equation (multivariate and non-linear). Variants of the formula are examined in order to evaluate the sensitivity of each model to the different parts of the equation. Modelization is performed on both a clean and a noisy version of the data. These equations are:
 - $y_0 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 5$<br>
 - $y_1 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 + 5$<br>
 - $y_2 = 0.45 \cdot x_1 - 0.35 \cdot x_2 + 0.7 \cdot x_3^2 - x_4^{-1} + 5$<br>
