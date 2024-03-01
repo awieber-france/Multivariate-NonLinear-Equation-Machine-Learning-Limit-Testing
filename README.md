@@ -38,7 +38,7 @@ With regards to transforming the base features ($x_1$, $x_2$, $x_3$, etc.) into 
 ### *Files:*
 1.	Polynomial_Machine_Learning_Limit_Testing.ipynb : Jupyter notebook document containing all the project code
 2.	requirements.txt : packages to be installed via "conda install" in Conda
-     -	use the following code in Anaconda Terminal: "for /f %i in (requirements.txt) do conda install --yes %i"
+     -	use the following code in Anaconda Terminal: *for /f %i in (requirements.txt) do conda install --yes %i*
 
 ## Making the code functional:
 The code should be immediately functional after installation of the requirements. If this code is run in an IDE, then some extra Jupyter Notebook files may need to be installed.
