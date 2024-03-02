@@ -51,7 +51,7 @@ The ability to understand the limits of Polynomial Regression, Random Forest Reg
 3.	Anaconda
    
 ### *Files:*
-1.	Polynomial_Machine_Learning_Limit_Testing.ipynb : Jupyter notebook document containing all the project code
+1.	Multivariate_NonLinear_Equation_Machine_Learning_Limit_Testing.ipynb : Jupyter notebook document containing all the project code
 2.	requirements.txt : packages to be installed via "conda install" in Conda
      -	use the following code in Anaconda Terminal: *for /f %i in (requirements.txt) do conda install --yes %i*
 
